@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/page.css" /> 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/main.js"></script>
+    <title>hoopoid :: {% block title %}couture hoops{% endblock %}</title> 
+  </head> 
+  <body> 
+    <div id="wrapper"> 
+      <div id="header"> 
+	<div id="header_group"> 
+	  <div id="title"> 
+	    <h1><a href="/">hoopoid</a></h1> 
+	  </div> 
+	  <div id="navigation"> 
+	    <ul> 
+	      {% block navigation %}
+	        {% if not all_sections %}
+	          <li id="home"><a href="/" title="pink" class="pink selected">home</a></li> 
+	        {% else %}
+	          {% for nav in all_sections %}
+	            <li id="{{ nav.slug }}"><a href="{% url section slug=nav.slug %}" title="{{ nav.title_color }}" class="nav {% if nav == section %}{{ nav.title_color }} selected{% endif %}">{{ nav.title|lower }}</a></li> 
+		  {% endfor %}
+	      <li id="store"><a href="../store" title="yellow" class="yellow selected">store</a></li> 
+		{% endif %}
+	      {% endblock %}
+	    </ul> 
+	  </div> 
+	</div> 
+      </div> 
+      <div id="content_group">
+	{% block content %}
+	<!-- Rendered without content -->
+	{% endblock %}
+      </div>
+	<div id="footer">
+	  <div id="copyright">
+	  <p>2013 Hoopoid. All rights reserved.</p>
+	  </div>
+	</div>
+      </div>
+
+    </div>
+  </body>
+</html>

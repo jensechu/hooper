@@ -1,0 +1,208 @@
+body {
+    background-color: #262626;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    color: #BEBEBE;
+    font-family: sans-serif;
+}
+
+#header {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+#header h1 {
+    font-size: 40pt;
+    margin: 0px;
+}
+
+#header_group {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    width: 800px;
+ }
+
+#title {
+    position: relative;
+    float: left;
+    margin: 0px 100px 0px 0px;
+}
+
+#title a {
+    text-decoration: none;
+    color: #BEBEBE;
+}
+
+
+#navigation ul {
+    position: relative;
+    float: right;
+    padding: 27px 10px 0px 0px;
+    list-style-type: none;
+    margin: 0px;
+}
+
+#navigation li {
+    display: inline;
+    margin-left: 20px;
+
+}
+
+.nav {
+    text-decoration: none;
+    font-size: 18pt;
+    font-variant: small-caps;
+    color: #BEBEBE;
+}
+
+#navigation a:active {
+    font-weight: bold;
+}
+
+#content_group {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    clear: both;
+}
+
+#content_group p {
+    line-height: 24px;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 0px 20px;
+    background-color: black;
+}
+
+.full {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.full img {
+    height: 300px;
+    width: 760px;
+}
+
+.full h3 {
+    padding-top: 10px;
+}
+
+.right {
+    float: right;
+    width: 350px;
+    padding-bottom: 20px;
+}
+
+.left {
+    float: left;
+    width: 350px;
+    padding-bottom: 20px; 
+}
+
+p {
+    font-size: 11pt;
+}
+
+#main_content h3 {
+    padding-top: 10px;
+} 
+
+h3 {
+    font-size: 18pt;
+    font-variant: small-caps;
+    border-bottom: 2px solid #bebebe;
+    margin-top: 10px;
+    padding: 5px 0px;
+}
+
+#footer_group {
+    width: 100%;
+    clear: both;
+    padding-top: 10px;
+    position: relative;
+    bottom: 10px;
+}
+
+#footer {
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2px 20px;
+}
+
+#copyright {
+    height: 50px;
+    position: relative;
+    float: left;
+    background-color: black;
+    width: 800px;
+    margin-top: 20px;
+}
+
+#copyright p {
+    font-size: 10pt;
+    margin: 15px 20px;
+
+}
+
+.pink {
+   color: #ff6699;
+}
+
+.blue {
+    color: #1B70E0;
+}
+
+.green {
+    color: #A1C820;
+}
+
+.yellow {
+    color: #yellow;
+}
+
+/* CSS for the Store */
+
+#all_hoops {
+    margin-top: 25px;
+}
+
+.hoop_item {
+    background-color: black;
+    height: 370px;
+    width: 370px;
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.hoop_header {
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hoop_header h3 {
+    margin: 0px;
+}
+
+.hoop_header h4 {
+    position: relative;
+    float: right;
+    bottom: 30px;
+    right: 0px;
+    margin: 0px;
+}
+
+#hoop_image img {
+    height: 285px;
+    width: 320px;
+    margin: 0px 25px 25px 25px;
+}
